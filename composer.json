@@ -1,0 +1,23 @@
+{
+    "name": "dritux/php-queue",
+    "description": "SDK that facilitates Amazon SQS|AMQP|PUBSUB message queue production and consumption",
+    "type": "library",
+    "require": {
+        "psr/log": "^1.0",
+        "beberlei/metrics": "^2.7",
+        "aws/aws-sdk-php": "^3.69",
+        "php-amqplib/php-amqplib": "^2.8",
+        "google/apiclient": "^2.2",
+        "google/cloud": "^0.83.0",
+        "monolog/monolog": "^1.23"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.7"
+    },
+    "autoload": {
+        "files": ["src/Mq/MetricDirectory.php"],
+        "psr-4": {
+            "Dr\\": "src/"
+        }
+    }
+}
